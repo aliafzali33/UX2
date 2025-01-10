@@ -1,0 +1,571 @@
+@media (max-width: 768px) {
+    footer {
+        bottom: unset;
+        padding: 20px;
+    }
+    .column {
+        flex-basis: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    .column:nth-child(2), .column:nth-child(3)  {
+        flex-basis: 100%;
+    }
+
+    .container-for-header h1 {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+:root {
+   --primary-color: rgb(102, 156,203);
+   --primary-color-dark: rgb(86, 129, 167);
+   --color-blue: blue;
+   --text-light: rgb(100, 100, 101);
+   --text-dark: rgb(40, 50, 55);
+   --secondary-color: rgb(216, 232, 243);
+   --max-width: 1200px;
+   --width: 100%;
+   --logo-size-text: 27px;
+   --transparent-color: rgba( 24, 100, 171, 0.1);
+}
+
+.container-for-section {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 8% 1.6%;
+}
+
+.Title {
+    text-align: center;
+    margin-bottom: 35px;
+    color: var(--primary-color-dark);
+}
+
+
+.subtitle {
+    font-style: oblique;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 70px;
+    color: var(--primary-color);
+}
+
+body {
+   font-family: "Roboto", sans-serif;
+}
+
+img {
+  height: auto;
+  width: 30%;  
+}
+
+nav {
+  top: 0%;
+  left: 30%;
+  padding: 6.4% 4%;
+  max-width: var(--max-width);
+  width: var(--width);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo-navigation a {
+    text-decoration: solid;
+    font-size: var(--logo-size-text);
+    color: var(--color-blue);
+}
+
+nav .nav__links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .nav__links .link {
+    padding: 10px 20px;
+}
+
+nav .nav__links .dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    color: black;
+    background-color: skyblue;
+}
+
+.options {
+    position: absolute;
+    background-color: skyblue;
+    display: none;
+    z-index: 1;
+    display: none;
+}
+
+.options a {
+    color: black;
+    padding: 10px 26.5px;
+    font-size: 13px;
+    border: none;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown:hover .options {
+    display: block;
+}
+
+.options a:hover {
+    background-color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Robot', sans-serif;
+}
+
+.footer-style {
+    
+    padding: 85px 0 20px;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #e3e4e7, #5fb3c0);
+    font-size: 13px;
+    line-height: 10px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.footer-row {
+    margin: auto;
+    width: 90%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.column:nth-child(2), .column:nth-child(3)  {
+    flex-basis: 15%;
+}
+
+.logo-website{
+    width: 30%;
+    margin-bottom: 0%;
+}
+
+.column h3 {
+    width: fit-content;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.Email {
+    width: fit-content;
+    border-bottom: 1% solid #d6bebe;
+    margin: 20px 0;
+}
+
+.listt {
+    list-style: none;
+    margin-bottom: 10%;
+}
+
+.listt a {
+    text-decoration: double;
+}  
+
+form {
+    display: flex;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:  1px solid #b5acac;
+    margin-bottom: 30px;
+}
+
+form .fa-regular {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input {
+    background: transparent;
+    width: 100%;
+    border: 0px;;
+    color: black;
+    outline: none;
+}
+
+form button {
+    border: 0%;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+}
+
+form button .fa-solid {
+    font-size: 14px;
+    color: black;
+}
+
+.social-media  {
+    height: 40%;
+    width: 30%;
+    border-radius: 90%;
+    line-height: 30px;
+    text-align: center;
+    color: black;
+    margin-right: 15px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+}
+
+hr {
+    width: 80%;
+    border: 0%;
+    border-top: 1px solid gray;
+    margin: 30 auto;
+    /*position: relative;*/
+    z-index: 1;
+}
+
+.copy-right {
+    text-align: right;
+    position: relative;
+    z-index: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.container-for-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align:center;
+    align-items: center;
+    width:100%;
+}
+
+.about-us {
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.newyork {
+    width: 90%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+}
+
+.madrid {
+    width: 90%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+}
+
+.barcelona {
+    width: 90%;
+    height: 600px;
+    object-fit:cover;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+}
+
+.cairo {
+    width: 90%;
+    height:600px;
+    object-fit:cover;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+}
+
+.tokyo {
+    width: 90%;
+    height:600px;
+    object-fit:cover;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+}
+
+
+.Services {
+    width: 90%;
+    height:600px;
+    object-fit:cover;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+}
+
+
+.travelworld {
+    width: 90%;
+    height:auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto 20px;
+    margin-top: 10px;
+}
+
+.header-title {
+    font-size: 80px;
+    color: var(--color-blue);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.paragraph1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.paragraph2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.information {
+    margin-bottom: 20px;
+}
+
+.container-for-article {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.relative-content {
+    background-color: #b6d9ec;
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.relative-text {
+    font-size: 12px;
+}
+
+.text-over-img {
+    position: absolute;
+    top: 40%;
+    left: 49.30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.button {
+    transform: trnaslate(-50%, -50%);
+    border-radius: 10px;
+    color: skyblue;
+    background-color: var(--transparent-color);
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+    left: 45.80%;
+    top: 40%;
+    margin-top:  50px;
+}
+
+.button:hover {
+    color: white;
+}
+
+.button:active {
+    color: skyblue;
+}
+
+.container-for-card {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-top: 50px; 
+}
+
+.cardnotused {
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.CentralPark {
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.RetiroPark {
+    width: 85%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.HighLine {
+    width: 85%;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.PuertadelSol {
+    width: 85%;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.AmericanMuseum {
+    width: 90%;
+    height: auto;
+    margin-left: 10px;
+}
+
+.Bernabeu {
+    width: 125%;
+    height: auto;
+    margin-left: 10px;
+}
+
+.card-contentnotused {
+    padding: 15px;
+}
+
+.card-titlenotused {
+   font-size: 20px;
+   margin-bottom: 8px; 
+}
+
+.card-contentnotused p {
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.button1 {
+    display: inline-block;
+    padding: 8px;
+    background-color: skyblue;
+    color: black;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.button2 {
+    display: inline-block;
+    padding: 8px;
+    background-color: skyblue;
+    color:black;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.button3 {
+    display: inline-block;
+    padding: 8px;
+    background-color: skyblue;
+    color:black;
+    border-radius: 10px;
+    margin-top: 10px;
+} 
+
+.card {
+    max-width:100%;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-img-top {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.home-text{
+    margin-top: 100px;
+}
+
+.container-for-header h1 {
+    /*margin-bottom: 10px;
+    margin-top: 10px;*/
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-blue);
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    padding: 20px 0; 
+}
+
+.header p {
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title2 {
+    margin-top: 10px;
+    color: var(--color-blue);
+}
+
+.card-cairo {
+    margin-left: 10px;
+}
+
+.card-img-top-barcelona {
+    width:285px;
+    height: 195px;
+}
+
+.card {
+    margin-top: 20px;
+    left: 10%
+}
+
