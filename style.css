@@ -564,10 +564,10 @@ hr {
     height: 195px;
 }
 
-/*.card {
+.card {
     margin-top: 20px;
-    left: 10%
-}*/
+    /*left: 10%*/
+}
 
 .subtitle {
     color: black;
